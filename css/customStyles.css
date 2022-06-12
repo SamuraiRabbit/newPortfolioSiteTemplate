@@ -1,0 +1,40 @@
+:root {
+    --bgMain: #0b0c10;
+    --bgBlock: #1f2833;
+    --bodyText: #c5c6c7;
+    --headerText: #66fcf1;
+    --border: #45a29e;
+}
+
+body {
+    background-color: var(--bgMain);
+}
+
+nav a {
+    color: var(--headerText) !important;
+}
+
+h1, h2 {
+    color: var(--headerText) !important;
+}
+
+p {
+    color: var(--bodyText);
+}
+
+.bg-primary {
+    background-color: var(--bgBlock) !important;
+}
+
+.text-secondary {
+    color: var(--headerText) !important;
+}
+
+.masthead-subheading {
+    color: var(--headerText) !important;
+}
+
+.modal-content {
+    background-color: var(--bgBlock) !important;
+    border-color: var(--border) !important;
+}
