@@ -20,6 +20,8 @@
         <link href="libs/css/customStyles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <!-- Preloader-->
+        <div id="preloader"></div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
@@ -160,7 +162,7 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" action="https://formsubmit.co/494233f27764d4e419296de3b3fa11fb" method="POST">
+                        <form id="contactForm" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" name="name" autocomplete="off" required>
@@ -184,10 +186,9 @@
                                 </div>
                             </div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" id="submit" name="submit" type="submit">Send</button>
-                            <input type="hidden" name="_next" value="https://christianpdoyle.co.uk/index.html#contact">
+                            <button class="btn btn-primary btn-xl" id="submitForm" name="submit" type="submit">Send</button>
+                            <input type="hidden" name="_next" value="https://christianpdoyle.co.uk/#contact">
                             <input type="hidden" name="_subject" value="New Website Contact!">
-                            <input type="text" name="_honey" style="display:none">
                         </form>
                     </div>
                 </div>
@@ -428,8 +429,6 @@
                 </div>
             </div>
         </div>
-        <!-- Preloader-->
-        <div id="preloader"></div>
         <!-- jQuery-->
         <script src="vendors/jquery/js/jquery-3.6.0.min.js"></script>
         <!-- Bootstrap core JS-->
