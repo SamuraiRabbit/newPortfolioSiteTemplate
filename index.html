@@ -10,12 +10,14 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- DevIcon icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/customStyles.css" rel="stylesheet" />
+        <link href="libs/css/styles.css" rel="stylesheet" />
+        <link href="libs/css/customStyles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -48,7 +50,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Full-Stack Developer</p>
+                <p class="masthead-subheading font-weight-light mb-0">Full Stack Developer</p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -123,25 +125,16 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">I'm Chris and I'm training to be a full stack developer. I enjoy learning to code and would like to make software, especially games, professionally.
-                        Below is a list of technologies that I have studied and worked with. Some of which, you will find examples of in the projects section.                      
+                    <div class="col-lg-4 ms-auto">
+                        <p class="lead">I'm Chris and I'm training to be a full stack developer. I enjoy learning to code and would like to make software, especially games, professionally.
+                        Here you'll find a list of technologies that I have studied and worked with. Some of which, you will find examples of in the portfolio section.                      
                         Outside of coding I love tabletop games, especially D&D. I also enjoy video production, football and video games.          
-                        Thanks for visiting my site, you can get in touch with me here.</p></div>
+                        </p>
+                    </div>
                     <div class="col-lg-4 me-auto">
                         <p class="lead">Skills and Technologies:</p>
-                        <ul>
-                            <li>C#</li>
-                            <li>GitHub</li>
-                            <li>Unity</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript, jQuery & Bootstrap</li>
-                            <li>SQL</li>
-                            <li>PHP</li>
-                            <li>Java</li>
-                            <li>Adobe Premiere Pro</li>
-                        </ul>
+                            <p><i class="devicon-html5-plain-wordmark devIcon"></i> <i class="devicon-css3-plain devIcon"></i> <i class="devicon-javascript-plain devIcon"></i> <i class="devicon-jquery-plain-wordmark devIcon"></i><i class="fa-brands fa-bootstrap devIcon"></i> <i class="devicon-postgresql-plain-wordmark devIcon"></i> <i class="devicon-php-plain devIcon"></i></p>
+                            <p><i class="devicon-csharp-plain devIcon"></i> <i class="devicon-java-plain-wordmark devIcon"></i> <i class="devicon-python-plain-wordmark devIcon"></i> <i class="devicon-github-original-wordmark devIcon"></i> <i class="devicon-unity-original-wordmark devIcon"></i> <i class="devicon-nodejs-plain devIcon"></i> <i class="devicon-premierepro-plain devIcon"></i></p>                   
                     </div>
                 </div>
                 <!-- About Section Button-->
@@ -179,10 +172,6 @@
                                 <label for="email">Email address</label>
                             </div>
                             <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" name="tel" autocomplete="off" required>
-                                <label for="phone">Phone number</label>
-                            </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text" name="message"  autocomplete="off" required></textarea>
@@ -439,9 +428,13 @@
                 </div>
             </div>
         </div>
+        <!-- Preloader-->
+        <div id="preloader"></div>
+        <!-- jQuery-->
+        <script src="vendors/jquery/js/jquery-3.6.0.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!-- Core theme JS-->     
+        <script src="libs/js/main.js"></script>
     </body>
 </html>

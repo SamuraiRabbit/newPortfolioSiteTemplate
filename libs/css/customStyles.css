@@ -1,0 +1,96 @@
+:root {
+    --bgMain: #0b0c10;
+    --bgBlock: #1f2833;
+    --bodyText: #c5c6c7;
+    --headerText: #66fcf1;
+    --border: #45a29e;
+}
+
+body {
+    background-color: var(--bgMain);
+}
+
+nav a {
+    color: var(--headerText) !important;
+}
+
+h1, h2, h4 {
+    color: var(--headerText) !important;
+}
+
+p {
+    color: var(--bodyText);
+}
+
+.bg-primary {
+    background-color: var(--bgBlock) !important;
+}
+
+.text-secondary {
+    color: var(--headerText) !important;
+}
+
+.masthead-subheading {
+    color: var(--headerText) !important;
+}
+
+.modal-content {
+    background-color: var(--bgBlock) !important;
+    border-color: var(--border) !important;
+}
+
+.devIcon {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+#skillList {
+    list-style-type: none;
+}
+
+/* Pre Loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+    
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #56829e ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+    
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        }
+    }
+    @keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
